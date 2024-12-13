@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Davi Dantas Guerreiro Apolonia</title>
+    <link rel="stylesheet" href="Untitled-1 - Copia.css">
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Davi Dantas</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#testimonials">Depoimentos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <button class="burger" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Seção Inicial -->
+    <section id="home" class="home">
+        <div class="container">
+            <h1>Bem-vindo ao Meu Portfólio</h1>
+            <p>Explore minhas habilidades, projetos e serviços.</p>
+            <a href="#about" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>eu sou um estudante de programação que não tem certza se vai seguir tal carreira porem tem interesse en tal carreira.</p>
+        </div>
+    </section>
+
+    <!-- Seção Habilidades -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <div class="skill">
+                <h3><i class="fab fa-html5"></i> HTML5</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 95%;">95%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3><i class="fab fa-css3-alt"></i> CSS3</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;">90%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3><i class="fab fa-js-square"></i> JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;">85%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3><i class="fab fa-react"></i> React</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3><i class="fab fa-node-js"></i> Node.js</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;">75%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Projeto 1</h3>
+                    <img src="project1.jpg" alt="Projeto 1">
+                    <p>Descrição do projeto 1. <a href="#">Veja mais</a></p>
+                </div>
+                <div class="project">
+                    <h3>Projeto 2</h3>
+                    <img src="project2.jpg" alt="Projeto 2">
+                    <p>Descrição do projeto 2. <a href="#">Veja mais</a></p>
+                </div>
+                <div class="project">
+                    <h3>Projeto 3</h3>
+                    <img src="project3.jpg" alt="Projeto 3">
+                    <p>Descrição do projeto 3. <a href="#">Veja mais</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Serviços</h2>
+            <ul>
+                <li><i class="fas fa-code"></i> Desenvolvimento de Websites</li>
+                <li><i class="fas fa-laptop-code"></i> Aplicativos Web</li>
+                <li><i class="fas fa-tachometer-alt"></i> Otimização de Performance</li>
+                <li><i class="fas fa-cogs"></i> Consultoria em TI</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Seção Depoimentos -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <blockquote>
+                <p>"Davi entregou um projeto incrível que superou nossas expectativas!"</p>
+                <cite>— Cliente Satisfeito</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Profissional excelente, altamente recomendado."</p>
+                <cite>— Empresa XYZ</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato pelo e-mail: <a href="mailto:dantguerreiro@gmail.com">dantguerreiro@gmail.com</a></p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Davi Dantas Guerreiro Apolonia. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
